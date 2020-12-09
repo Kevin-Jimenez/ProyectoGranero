@@ -1,0 +1,107 @@
+html {
+  font-size: 16px;
+ 
+ 
+
+}
+p{
+    font-family: "Homer Simpson", cursive;
+    text-align: center;
+    font-size:80px;
+}
+
+.menu {
+    width: 2.2rem;
+    height: 2.7rem;
+     background: linear-gradient(#f3f781, #f8f9f9, #f3f781);
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-family: "Homer Simpson", cursive;
+    font-size: 2rem;
+    color: width;
+    text-align: center;
+    transition: left 0.7s;
+}
+
+.checkbox:checked ~ .menu {
+    left: 40%;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/*cabecera con imagenes*/
+#cabesera{
+    min-height:500px;
+    background: url('../imagenes/Exp.jpg') no-repeat center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    text-align:center;
+    color:#ffffff;
+}
+#cabesera h1{
+    margin-top:100px;
+    font-size:50px;
+    margin-bottom:5px;
+     font-family: "Homer Simpson", cursive;
+     background-color: black;
+
+
+}
+#cabesera p{
+    font-size: 30px;
+}
+
+.left-panel {
+    width: 40%;
+    height: 100%;
+    /*safari*/
+    background:  -webkit-linear-gradient(#f3f781, #f8f9f9, #f3f781);
+    /*opera*/
+    background: -o-linear-gradient(#f3f781, #f8f9f9, #f3f781);
+    /*estandar*/
+    background: linear-gradient(#f3f781, #f8f9f9, #f3f781);
+    position: absolute;
+    top: 0;
+    left: -40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+}
+
+.checkbox:checked ~ .left-panel {
+    left: 0;
+}
+
+.checkbox {
+    display: none;
+    
+}
+
+ul a {
+    color: #000000;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+}
+
+li:hover {
+    color: gray;
+    border: solid white;
+    border-width: 0 0.1rem;
+}
+
+.imgcent{
+	position:relative;
+	bottom:-110px;
+	right:-580px;
+}
